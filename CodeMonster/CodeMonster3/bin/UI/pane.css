@@ -1,0 +1,53 @@
+#pane{
+-fx-background-color:rgb(250,248,247);
+}
+
+#label{
+-fx-text-fill:rgb(52,73,94);
+}
+
+#axis{
+	-fx-tick-label-fill:rgb(255,255,255);
+}
+
+#chart chart-title{
+	-fx-background-color:rgb(250,248,247);
+}
+
+#tableView {
+-fx-background-color:rgb(250,248,247);
+}
+
+#btn {
+-fx-background-color:rgb(44,62,80);
+-fx-background-radius: 5.0px;
+-fx-text-fill:#fff;
+}
+#btn:hover{
+	-fx-background-color:#00A779;
+	-fx-cursor:hand ;
+}
+
+#textField {
+-fx-background-color:rgb(255,255,255);
+-fx-text-fill:rgb(0,0,0);
+}
+
+#tabPane tab-header-background{
+-fx-background-color:rgb(43,43,43);
+}
+
+#tab {
+-fx-background-color:rgb(93,173,226);
+-fx-text-fill:rgb(213,241,235);
+-fx-pref-width: 278.0px;
+}
+#tab:pressed  {
+-fx-background-color:rgb(255,255,255);
+-fx-text-fill:rgb(213,241,235);
+-fx-pref-width: 278.0px;
+}
+
+#tab tab-label{
+-fx-text-fill:rgb(52,73,94);
+}

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.FlowPane?>
+
+<Pane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="620" prefWidth="971.0" stylesheets="@pane.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Controller2">
+   <children>
+      <BorderPane layoutX="1.0" prefHeight="620" prefWidth="971.0">
+         <left>
+            <VBox prefHeight="620" prefWidth="122.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="UserImage" mnemonicParsing="false" onAction="#UserImage" prefHeight="88.0" prefWidth="218.0" text="个人中心" textFill="#011935" />
+                  <Button fx:id="CodeInfo" mnemonicParsing="false" onAction="#CodeInfo" prefHeight="106.0" prefWidth="219.0" text="编码统计" />
+                  <Button fx:id="Friend" mnemonicParsing="false" onAction="#Friend" prefHeight="100.0" prefWidth="216.0" text="好友排名" />
+                  <Button fx:id="AboutUs" mnemonicParsing="false" onAction="#AboutUs" prefHeight="115.0" prefWidth="221.0" text="关于我们" />
+                  <Button fx:id="Nothing" disable="false" mnemonicParsing="false" prefHeight="216.0" prefWidth="164.0" />
+               </children>
+            </VBox>
+         </left>
+         <center>
+            <TabPane Id="tabPane" prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE" BorderPane.alignment="CENTER">
+              <tabs>
+                <Tab Id="tab" text="累计代码量">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <Cylinder fx:id="cylinder_allData" height="300.0" layoutX="396.0" layoutY="382.0" radius="50.0" rotate="50.2" scaleX="3.0">
+                                 <rotationAxis>
+                                    <Point3D x="1.0" />
+                                 </rotationAxis></Cylinder>
+                              <VBox layoutX="226.0" layoutY="23.0" prefHeight="151.0" prefWidth="340.0">
+                                 <children>
+                                    <Label Id="label" alignment="CENTER" contentDisplay="CENTER" prefHeight="35.0" prefWidth="367.0" text="总共的代码量" textFill="#0fb5e8">
+                                       <font>
+                                          <Font size="27.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="label_totalNum" Id="label" alignment="CENTER" contentDisplay="CENTER" prefHeight="94.0" prefWidth="388.0" text="22" textAlignment="CENTER" textFill="#0fb5e8">
+                                       <font>
+                                          <Font size="74.0" />
+                                       </font>
+                                       <VBox.margin>
+                                          <Insets top="20.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                 </children>
+                              </VBox>
+                           </children></AnchorPane>
+                  </content>
+                </Tab>
+                  <Tab  Id="tab" text="本周统计">
+                     <content>
+                        <AnchorPane fx:id="tab2" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <Label fx:id="label_weekNum" Id="label" layoutX="323.0" layoutY="25.0" text="本周3365行" textFill="#0fb5e8">
+                                 <font>
+                                    <Font size="27.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab  Id="tab" text="本月统计">
+                     <content>
+                        <AnchorPane fx:id="tab3" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <Label fx:id="label_monthNum" Id="label" layoutX="339.0" layoutY="25.0" text="本月22行" textFill="#0fb5e8">
+                                 <font>
+                                    <Font size="27.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+              </tabs>
+            </TabPane>
+         </center>
+      </BorderPane>
+   </children>
+</Pane>

@@ -1,0 +1,42 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+.button{
+-fx-background-color:#98FB98;
+-fx-background-radius: 5.0px;
+-fx-text-fill:#6495ED;
+-fx-pref-height: 60px;
+-fx-pref-width: 200.0px;
+}
+.button:hover{
+-fx-background-color:#27a0cb;
+-fx-text-fill:rgb(1,254,89);
+-fx-cursor:hand ;
+}
+#Record{
+-fx-background-color:#98FB98;
+-fx-background-radius: 5.0px;
+-fx-text-fill:#6495ED;
+-fx-pref-height: 60px;
+-fx-pref-width: 200.0px;
+}
+#Record:hover{
+-fx-background-color:#63B8FF;
+-fx-text-fill:rgb(1,254,89);
+-fx-cursor:hand ;
+}
+
+#notRecord{
+-fx-background-color:rgb(57,156,255);
+-fx-background-radius: 5.0px;
+-fx-text-fill:rgb(1,254,89);
+-fx-pref-height: 60px;
+-fx-pref-width: 200.0px;
+}
+#notRecord:hover{
+-fx-background-color:#3d4ce8;
+-fx-cursor:hand ;
+}
+
+/*给按钮设置图片
+ * 这样就可以通过设置以后设置点击，换图片巴拉巴拉
+ * -fx-background-image:url('/Pic/imgPrevious.png')
+ */

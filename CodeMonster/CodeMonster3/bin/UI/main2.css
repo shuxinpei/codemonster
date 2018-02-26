@@ -1,0 +1,60 @@
+#UserImage{
+-fx-background-color:rgb(44,62,80);
+-fx-background-radius: 5.0px;
+-fx-text-fill:#fff;
+-fx-pref-height: 62px;
+-fx-pref-width: 200.0px;
+}
+#UserImage:hover{
+-fx-background-color:#00A779;
+-fx-cursor:hand ;
+}
+
+#CodeInfo{
+-fx-background-color:rgb(44,62,80);
+-fx-background-radius: 5.0px;
+-fx-text-fill:#fff;
+-fx-pref-height: 62px;
+-fx-pref-width: 200.0px;
+}
+#CodeInfo:hover{
+-fx-background-color:#00A779;
+-fx-cursor:hand ;
+}
+
+#Friend{
+-fx-background-color:rgb(44,62,80);
+-fx-background-radius: 5.0px;
+-fx-text-fill:#fff;
+-fx-pref-height: 62px;
+-fx-pref-width: 200.0px;
+}
+#Friend:hover{
+-fx-background-color:#00A779;
+-fx-cursor:hand ;
+}
+
+#AboutUs{
+-fx-background-color:rgb(44,62,80);
+-fx-background-radius: 5.0px;
+-fx-text-fill:#fff;
+-fx-pref-height: 62px;
+-fx-pref-width: 200.0px;
+}
+#AboutUs:hover{
+-fx-background-color:#00A779;
+-fx-cursor:hand ;
+}
+
+#Nothing{
+-fx-background-color:rgb(44,62,80);
+-fx-background-radius: 5.0px;
+-fx-text-fill:#fff;
+-fx-pref-height: 372px;
+-fx-pref-width: 200.0px;
+
+}
+/*给按钮设置图片
+ * 这样就可以通过设置以后设置点击，换图片巴拉巴拉
+ * -fx-background-image:url('/Pic/imgPrevious.png')
+ */

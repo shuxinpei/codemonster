@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.FlowPane?>
+
+<Pane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="620" prefWidth="971.0" stylesheets="@pane.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Controller4">
+   <children>
+      <BorderPane layoutX="1.0" prefHeight="620" prefWidth="971.0">
+         <left>
+            <VBox prefHeight="620" prefWidth="127.0" BorderPane.alignment="CENTER">
+               <children>
+              <Button fx:id="UserImage" mnemonicParsing="false" onAction="#UserImage" prefHeight="88.0" prefWidth="218.0" text="个人中心" />
+                  <Button fx:id="CodeInfo" mnemonicParsing="false" onAction="#CodeInfo" prefHeight="106.0" prefWidth="219.0" text="编码统计" />
+                  <Button fx:id="Friend" mnemonicParsing="false" onAction="#Friend" prefHeight="100.0" prefWidth="216.0" text="好友排名" />
+                  <Button fx:id="AboutUs" mnemonicParsing="false" onAction="#AboutUs" prefHeight="115.0" prefWidth="221.0" text="关于我们" />
+                  <Button fx:id="Nothing" disable="false" mnemonicParsing="false" prefHeight="216.0" prefWidth="164.0" />
+               </children>
+            </VBox>
+         </left>
+         <center>
+            <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="280.0" fitWidth="314.0" layoutX="282.0" layoutY="170.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@20180105001602.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="84.0" layoutY="503.0" text="Copyright © 2018 Joint-Effort团队 - Joint-Effort团队QQ群号：7854524 - 湘ICP备16005435号-1 " />
+               </children>
+            </Pane>
+         </center>
+      </BorderPane>
+   </children>
+</Pane>

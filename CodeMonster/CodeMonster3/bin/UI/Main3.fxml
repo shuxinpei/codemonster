@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.FlowPane?>
+
+<Pane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="620" prefWidth="971.0" stylesheets="@pane.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Controller3">
+   <children>
+      <BorderPane layoutX="1.0" prefHeight="620" prefWidth="971.0">
+         <left>
+            <VBox prefHeight="620" prefWidth="128.0" BorderPane.alignment="CENTER">
+               <children>
+                <Button fx:id="UserImage" mnemonicParsing="false" onAction="#UserImage" prefHeight="88.0" prefWidth="218.0" text="个人中心" />
+                  <Button fx:id="CodeInfo" mnemonicParsing="false" onAction="#CodeInfo" prefHeight="106.0" prefWidth="219.0" text="编码统计" />
+                  <Button fx:id="Friend" mnemonicParsing="false" onAction="#Friend" prefHeight="100.0" prefWidth="216.0" text="好友排名" />
+                  <Button fx:id="AboutUs" mnemonicParsing="false" onAction="#AboutUs" prefHeight="115.0" prefWidth="221.0" text="关于我们" />
+                  <Button fx:id="Nothing" disable="false" mnemonicParsing="false" prefHeight="219.0" prefWidth="189.0" />
+               </children>
+            </VBox>
+         </left>
+         <center>
+            <HBox prefHeight="620.0" prefWidth="842.0" BorderPane.alignment="CENTER">
+               <children>
+                  <VBox prefHeight="620" prefWidth="421.0">
+                     <children>
+                        <Label Id="label" prefHeight="25.0" prefWidth="398.0" text="                            总排名">
+                           <font>
+                              <Font size="19.0" />
+                           </font>
+                        </Label>
+                        <TableView fx:id="AllSort" Id="tableView" prefHeight="510.0" prefWidth="421.0">
+                          <columns>
+                            <TableColumn prefWidth="75.0" text="排名" />
+                            <TableColumn prefWidth="147.0" text="用户" />
+                              <TableColumn prefWidth="198.0" text="行数" />
+                          </columns>
+                        </TableView>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Button fx:id="addFriendBtn" Id="btn" mnemonicParsing="false" onAction="#addFriendBtnAction" prefHeight="50.0" prefWidth="147.0" text="添加好友" />
+                              <TextField fx:id="friend_add" Id="textField" prefHeight="50.0" prefWidth="282.0" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="620" prefWidth="421.0">
+                     <children>
+                        <Label Id="label" prefHeight="25.0" prefWidth="445.0" text="                               当天排名">
+                           <font>
+                              <Font size="19.0" />
+                           </font>
+                        </Label>
+                        <TableView fx:id="DaySort" Id="tableView" prefHeight="510.0" prefWidth="467.0">
+                          <columns>
+                            <TableColumn prefWidth="75.0" text="排名" />
+                            <TableColumn prefWidth="147.0" text="用户" />
+                              <TableColumn prefWidth="198.0" text="行数" />
+                          </columns>
+                        </TableView>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Button fx:id="deleteFriendBtn" Id="btn" mnemonicParsing="false" onAction="#deleteFriendBtnAction" prefHeight="50.0" prefWidth="147.0" text="删除好友" />
+                              <TextField fx:id="friend_delete" Id="textField" prefHeight="50.0" prefWidth="281.0" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </center>
+      </BorderPane>
+   </children>
+</Pane>
